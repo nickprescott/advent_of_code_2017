@@ -23,5 +23,20 @@ namespace puzzle1
             }
             return sum;
         }
+
+        public static int halfSumString(string text)
+        {
+            int sum = 0;
+            int half = text.Length / 2;
+
+            for (int x=0; x< text.Length; x++)
+            {
+                if(text[x] == text[(x + half) % text.Length])
+                {
+                    sum += int.Parse(text[x].ToString());
+                }
+            }
+            return sum;
+        }
     }
 }

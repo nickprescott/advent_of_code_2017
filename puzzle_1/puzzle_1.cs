@@ -9,6 +9,9 @@ namespace puzzle1
             string text = System.IO.File.ReadAllText("input_1.txt");
             int sum = Utils.sumString(text);
             Console.Write(sum);
+
+            sum = Utils.halfSumString(text);
+            Console.Write(sum);
         }   
 
         
